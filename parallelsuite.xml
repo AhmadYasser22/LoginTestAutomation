@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Parallel Suite">
+    <parameter name="browser" value="chrome-headless" />
+    <test name="Parallel Test" preserve-order="false">
+        <classes>
+            <class name="tests.BaseTest2" />
+            <class name="tests.LoginParallelTest" />
+
+        </classes>
+    </test>
+</suite>
